@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#">Pagina 1</a></li>
+            <li><a href="#">Pagina 2</a></li>
+        </ul>
+    </header>
+    <!-- comentario -->
+    <section class="banner">
+        <!--<div style="width: 100%; height: 150vh; background: red" ></div>-->
+    </section>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
